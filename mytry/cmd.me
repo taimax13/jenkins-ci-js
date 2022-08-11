@@ -1,0 +1,22 @@
+  
+   ### side containers used https://hub.docker.com/_/node https://hub.docker.com/_/python
+  
+  
+  
+   ### the script will return the temperature for tomorrow at 11 (with assumption that all the time api calls to https://open-meteo.com/en/docs will return the same structure)
+   ### as follows today, tomorrow etc...
+    
+   pip install requests 
+   python3 tmp_reqiest.py
+       prompt_example ```21.4```
+   
+   
+    ###### list of docker validation checks 
+       npm -v
+    2  npm -g install @inrupt/artifact-generator
+    3  artifact-generator --help
+    4  artifact-generator generate --inputResources https://team.inrupt.net/public/vocab/PetRock.ttl --noPrompt
+    7  cd Generated/SourceCodeArtifacts/JavaScript/
+   11  cd GeneratedVocab/
+   50  ls -ll
+   51  mv PET_ROCK.js IB_Pet_Rock${BUILD_NUMBER}_${TEMP}.js
